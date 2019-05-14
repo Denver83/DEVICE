@@ -15,68 +15,58 @@
 			<img src="img/logo.png" width="163" height="35" alt="Device" class="logo">
 		</a>
 		<div class="page-header__container">
-			<form action="https://yandex.ru/search/" method="get" target="_blank" class="user__block">
-				<label class="visually-hidden" for="search">Поиск по сайту</label>
-	      <input class="search__field" id="search" name="text" type="search" placeholder="Поиск по сайту">
-	      <button class="search__btn" type="submit">Найти</button>
-	    </form>
-	    <ul class="page__header--list">
-	      <li class="page__header--item">Войти</li>
-	      <li class="page__header--item">Сравнить</li>
-	      <li class="page__header--item">Корзина</li>
-	    </ul>
-			<ul class="main__nav--list">
-				<li class="main__nav--item"><a href="#">Каталог товаров</a></li>
-				<li class="main__nav--item"><a href="#">Доставка</a></li>
-				<li class="main__nav--item"><a href="#">Гарантия</a></li>
-				<li class="main__nav--item"><a href="#">Контакты</a></li>
-			</ul>
-		</div>
-		
-    <nav class="page-header__nav navigation">
-      <ul class="nav__list">
-        <li class="nav__item nav__item--catalog">
-          <a href="#" class="nav__link">Каталог товаров</a>
-          <button class="nav__btn nav__btn--on" type="button" disabled>Показать</button>
-          <button class="nav__btn nav__btn--off" type="button">Скрыть</button>
-          <div class="menu-catalog">
-            <ul class="menu-catalog__list">
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link categories-cat__link--current" href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link" href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="menu-catalog__list">
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link" href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="menu-catalog__list">
-              <li class="menu-catalog__item">
-                <a class="menu-catalog__link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Доставка</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Гарантия</a>
-        </li>
-        <li class="nav__item nav__item--contacts">
-          <a href="#" class="nav__link">Контакты</a>
-        </li>
+			<div class="page-header__group">
+				<form action="https://yandex.ru/search/" method="get" target="_blank" class="user__block">
+					<label class="visually-hidden" for="search">Поиск по сайту</label>
+		      <input class="search__field" id="search" name="text" type="search" placeholder="Поиск по сайту">
+		      <button class="search__btn" type="submit"></button>
+		    </form>
+		    <ul class="page__header--list">
+		      <li class="page__header--item"><a href="#">Войти</a></li>
+		      <li class="page__header--item"><a href="#">Сравнить</a></li>
+		      <li class="page__header--item"><a href="#">Корзина</a></li>
+		    </ul>
+	    </div>
+    	<nav class="page-header__nav navigation">
+				<ul class="main__nav--list">
+					<li class="main__nav--item"><a href="#">Каталог товаров</a></li>
+			      <ul class="nav__list">
+			        <li class="nav__item nav__item--catalog">
+			          <a href="#" class="nav__link">Каталог товаров</a>
+			          <button class="nav__btn nav__btn--on" type="button" disabled>+</button>
+			          <button class="nav__btn nav__btn--off" type="button">X</button>
+			          <div class="menu-catalog">
+			            <ul class="menu-catalog__list">
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link" href="#">Виртуальная реальность</a>
+			              </li>
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link categories-cat__link--current" href="catalog.html">Моноподы для селфи</a>
+			              </li>
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link" href="#">Экшн-камеры</a>
+			              </li>
+			            </ul>
+			            <ul class="menu-catalog__list">
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link" href="#">Фитнес-браслеты</a>
+			              </li>
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link" href="#">Умные часы</a>
+			              </li>
+			            </ul>
+			            <ul class="menu-catalog__list">
+			              <li class="menu-catalog__item">
+			                <a class="menu-catalog__link" href="#">Квадрокоптеры</a>
+			              </li>
+			            </ul>
+							</ul>
+					<li class="main__nav--item"><a href="#">Доставка</a></li>
+					<li class="main__nav--item"><a href="#">Гарантия</a></li>
+					<li class="main__nav--item"><a href="#">Контакты</a></li>
+			</div>
       </ul>
-    </nav>>
+    </nav>
 	</header>
 
 	<main>
