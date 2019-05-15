@@ -13,15 +13,18 @@
 }
 .page-header__group{
 	display: flex;
+	margin-bottom: 50px;
 }
 .user__block{
 	display: flex;
+	margin-right: 340px;
 }
 .search__field{
 	margin-top: 52px;
 	padding-left: 20px;
 	display: block;
 	border: none;
+	width: 210px;
 	background-color: #f7e296;
 	font-size: 15px;
 	line-height: 30px;	
@@ -43,22 +46,107 @@
 	display: flex;
 	margin-top: 53px;
 	list-style: none;
+	flex-basis: 60%;
 }
 .page__header--list a{
-	width: 100%;
 	font-size: 15px;
 	line-height: 30px;	
 	text-decoration: none;
 	list-style: none;
+	display: block;
 }
-.nav__list{
-	margin: 0;
-	padding: 0;
-	display: none;
-	list-style: none;
+.menu-catalog__item{
+	flex-basis: 27%;
+}
+.menu-catalog__item:first-child{
+	flex-basis: 46%;
+}
+.menu-catalog__item:last-child{
+	margin-left: 55px;
+}
+.menu-catalog__link{
+	display: block;
+	font-size: 15px;
+	line-height: 36px;
+}
+.menu-catalog{
+	position: relative;
+	display: flex;
+	padding-top: 10px;
+	background-color: #f7e296;
+	visibility: hidden;
 }
 .main__nav--list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	display: flex;
+}
+.page__header--item{
+	position: relative;
+}
+.page__header--item{
+	padding-left: 25px;
+	&::before{
+		content: '';
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 9px;
+		left: 5px;
+		background: url(../img/login.png) no-repeat;
+	}
+}
+	.page__header--item--compare{
+			&::before{
+		top: 10px;
+		background: url(../img/compare.png) no-repeat;
+	}
+}
+	.page__header--item--basket{
+			&::before{
+		background: url(../img/basket.png) no-repeat;
+	}
+}
+.page__header--item--compare,
+.page__header--item--basket{
+	flex-basis: 15%;
+	margin-left: 30px;
+}
+.page__header--item--login{
+	margin-right: 165px;
+}
+.main__nav--link{
+	position: relative;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Gilroy";
+	letter-spacing: 0.2em;
+}
+.main__nav--link--catalog{
+	&::after{
+		content: "";
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		right: -25px;
+		top: 3px;
+		background: url(../img/plus.png) no-repeat;
+	}
+}
+.main__nav--link--catalog:focus + .menu-catalog{
+	visibility: visible;
+}
+.main__nav--item:first-child{
+	width: 52%;
+}
+.main__nav--item:nth-child(2),
+.main__nav--item:nth-child(3){
+	margin-right: 40px;
+}
+.main__nav--item:last-child{
+	margin-right: 0;
+	margin-left: auto;
 }
