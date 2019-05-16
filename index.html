@@ -14,7 +14,6 @@
 		<a href="#" class="page-header__logo">
 			<img src="img/logo.png" width="163" height="35" alt="Device" class="logo">
 		</a>
-		<div class="page-header__container">
 			<div class="page-header__group">
 				<form action="https://yandex.ru/search/" method="get" target="_blank" class="user__block">
 					<label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -30,27 +29,26 @@
     	<nav class="page-header__nav navigation">
 				<ul class="main__nav--list">
 					<li class="main__nav--item"><a class="main__nav--link main__nav--link--catalog" href="#">Каталог товаров</a>
-			            <div class="menu-catalog">
-			              <div class="menu-catalog__item">
-			                <a class="menu-catalog__link" href="#">Виртуальная реальность</a>
-			                <a class="menu-catalog__link menu-catalog__link--current" href="catalog.html">Моноподы для селфи</a>
-			                <a class="menu-catalog__link" href="#">Экшн-камеры</a>
-			              </div>
-			              <div class="menu-catalog__item">
-			                <a class="menu-catalog__link" href="#">Фитнес-браслеты</a>
-			                <a class="menu-catalog__link" href="#">Умные часы</a>
-			            	</div>
-			              <div class="menu-catalog__item">
-			                <a class="menu-catalog__link" href="#">Квадрокоптеры</a>
-			              </div> 
-			            </div>
-			        </li>
-							<li class="main__nav--item"><a class="main__nav--link" href="#">Доставка</a></li>
-							<li class="main__nav--item"><a class="main__nav--link" href="#">Гарантия</a></li>
-							<li class="main__nav--item"><a class="main__nav--link" href="#">Контакты</a></li>
-					</div>
-      </ul>
-    </nav>
+			      <div class="menu-catalog">
+			        <div class="menu-catalog__item">
+			          <a class="menu-catalog__link" href="#">Виртуальная реальность</a>
+			          <a class="menu-catalog__link menu-catalog__link--current" href="catalog.html">Моноподы для селфи</a>
+			          <a class="menu-catalog__link" href="#">Экшн-камеры</a>
+			        </div>
+			        <div class="menu-catalog__item">
+			          <a class="menu-catalog__link" href="#">Фитнес-браслеты</a>
+			          <a class="menu-catalog__link" href="#">Умные часы</a>
+			        </div>
+			        <div class="menu-catalog__item">
+			          <a class="menu-catalog__link" href="#">Квадрокоптеры</a>
+			        </div> 
+			      </div>
+			    </li>
+					<li class="main__nav--item"><a class="main__nav--link" href="#">Доставка</a></li>
+					<li class="main__nav--item"><a class="main__nav--link" href="#">Гарантия</a></li>
+					<li class="main__nav--item"><a class="main__nav--link" href="#">Контакты</a></li>
+      	</ul>
+   		</nav>
 	</header>
 
 	<main>
@@ -71,49 +69,48 @@
           <p class="promo__slides__lead">Делай селфи, как Бен Стиллер!</p>
           <p class="promo__slides__descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a class="promo__slides__link btn" href="#">Подробнее</a>
-          <dl class="promo__properties">
-              <dt class="promo-properties__value promo-properties__value--width">8,5 м</dt>
-              <dd class="promo-properties__width">Длина палки</dd>
-              <dt class="promo-properties__value promo-properties__value--weight">5 кг</dt>
-              <dd class="promo-properties__weight">Вес палки</dd>
-              <dt class="promo-properties__value promo-properties__value--material">Карбон</dt>
-              <dd class="promo-properties__material">Материал</dd>
-          </dl>
+          <div class="promo__properties">
+              <p class="promo__properties__value promo__properties__value--width">8,5 м
+              <span class="promo__properties__width">Длина палки</span></p>
+              <p class="promo__properties__value promo__properties__value--weight">5 кг
+              <span class="promo__properties__weight">Вес палки</span></p>
+              <p class="promo__properties__value">Карбон
+              <span class="promo__properties__material">Материал</span></p>
+          </div>
         </li>
 
-        <li class="promo-slides__item promo-slides__item--2">
+        <li class="promo__slides__item promo__slides__item--2">
           <h3 class="visually-hidden">Слайд 2</h3>
-          <img class="promo-slides__img promo-slides__img--2" src="img/slider-2.png" width="345" height="485" alt="Промо-фото 2">
-          <p class="promo-slides__lead promo-slides__lead--second">Худеем правильно!</p>
-          <p class="promo-slides__descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="promo-slides__link btn" href="#">Подробнее</a>
-					<dl class="promo__properties">
-              <dt class="promo-properties__value promo-properties__value--width">48 часов</dt>
-              <dd class="promo-properties__width">Без подзарядки</dd>
-          </dl>
+          <img class="promo__slides__img promo__slides__img--2" src="img/slider-2.png" width="345" height="485" alt="Промо-фото 2">
+          <p class="promo__slides__lead promo__slides__lead--second">Худеем правильно!</p>
+          <p class="promo__slides__descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="promo__slides__link btn" href="#">Подробнее</a>
+					<div class="promo__properties">
+              <p class="promo__properties__value">48 часов
+              <span class="promo__properties__width">Без подзарядки</span></p>
+          </div>
         </li>
 
-        <li class="promo-slides__item promo-slides__item--3">
+        <li class="promo__slides__item promo__slides__item--3">
           <h3 class="visually-hidden">Слайд 3</h3>
-          <img class="promo-slides__img promo-slides__img--3" src="img/slider-3.png" width="526" height="334" alt="Промо-фото 3">
-          <p class="promo-slides__lead">Порхает как бабочка, жалит как пчела!</p>
-          <p class="promo-slides__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="promo-slides__link btn" href="#">Подробнее</a>
-					 <dl class="promo__properties">
-              <dt class="promo-properties__value promo-properties__value--width">800 м</dt>
-              <dd class="promo-properties__width">Дальность полета</dd>
-              <dt class="promo-properties__value promo-properties__value--weight">50 м</dt>
-              <dd class="promo-properties__weight">Радиус поражения</dd>
-          </dl>
+          <img class="promo__slides__img promo__slides__img--3" src="img/slider-3.png" width="526" height="334" alt="Промо-фото 3">
+          <p class="promo__slides__lead">Порхает как бабочка, жалит как пчела!</p>
+          <p class="promo__slides__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="promo__slides__link btn" href="#">Подробнее</a>
+					 <div class="promo__properties">
+              <p class="promo__properties__value">800 м
+              <span class="promo__properties__width">Дальность полета</span></p>
+              <p class="promo__properties__value promo__properties__value--radius">50 м
+              <span class="promo__properties__weight">Радиус поражения</span></p>
+          </div>
         </li>
       </ul>
-    </section>
      <ul class="categories">
       <li class="categories__item">
         <a class="categories__link categories__link--1" href="#">Виртуальная реальность</a>
       </li>
       <li class="categories__item">
-        <a class="categories__link categories__link--2" href="catalog.html">Моноподы для селфи</a>
+        <a class="categories__link categories__link--2" href="catalog.html">Моноподы<br> для селфи</a>
       </li>
       <li class="categories__item">
         <a class="categories__link categories__link--3" href="#">Экшн-камеры</a>
@@ -128,6 +125,7 @@
         <a class="categories__link categories__link--6" href="#">Квадрокоптеры</a>
       </li>
     </ul>
+    </section>
 		<section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
       <input class="services__btn services__btn--1 visually-hidden" id="services-btn-1" type="radio" name="services" value="1" checked>
